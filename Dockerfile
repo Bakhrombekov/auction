@@ -7,7 +7,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpq-dev \
     libpng-dev \
     libjpeg-dev
-    libxml2-dev \
     libfreetype6-dev \
     libonig-dev \
     vim \
