@@ -1,0 +1,18 @@
+name: otabek
+
+networks:
+    net:
+volumes:
+    postgres_data:
+
+services:
+  otabek_auction:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: otabek_auction
+    restart: always
+    networks:
+      - net
+    ports: 
+      - 9003:9000
